@@ -1,6 +1,6 @@
 # LoginServiceKit
 [![Release version](https://img.shields.io/github/release/Clipy/LoginServiceKit.svg)]()
-[![License: MIT](https://img.shields.io/badge/license-Apache%202.0-lightgrey.svg?style=flat)](https://github.com/Clipy/LoginServiceKit/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/github/license/Clipy/LoginServiceKit.svg)](https://github.com/Clipy/LoginServiceKit/blob/master/LICENSE)
 
 Easy manage login items in MacOSX
 
