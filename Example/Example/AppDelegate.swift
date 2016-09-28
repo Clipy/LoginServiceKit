@@ -14,13 +14,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
 
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
-        let appPath = NSBundle.mainBundle().bundlePath
-        LoginServiceKit.addPathToLoginItems(appPath)
-        //LoginServiceKit.removePathFromLoginItems(appPath)
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let appPath = Bundle.main.bundlePath
+        //LoginServiceKit.addLoginItems(at: appPath)
+        LoginServiceKit.removeLoginItems(at: appPath)
     }
 
-    func applicationWillTerminate(aNotification: NSNotification) {}
+    func applicationWillTerminate(_ aNotification: Notification) {}
 
 }
 
