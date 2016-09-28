@@ -16,8 +16,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let appPath = Bundle.main.bundlePath
-        //LoginServiceKit.addLoginItems(at: appPath)
-        LoginServiceKit.removeLoginItems(at: appPath)
+        LoginServiceKit.addLoginItems(at: appPath)
+        // LoginServiceKit.removeLoginItems(at: appPath)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {}
