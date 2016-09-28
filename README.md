@@ -11,11 +11,17 @@ Easy manage login items in MacOSX
 - Swift 3.0+
 
 ## Usage
+### CocoaPods
 ```
 platform :osx, '10.9'
 use_frameworks!
 
 pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
+```
+
+### Carthage
+```
+github "Clipy/LoginServiceKit"
 ```
 
 ## Example
