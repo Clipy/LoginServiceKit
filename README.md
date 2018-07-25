@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/github/license/Clipy/LoginServiceKit.svg)](https://github.com/Clipy/LoginServiceKit/blob/master/LICENSE)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-Easy manage login items in MacOSX
+Easy manage login items in macOS.
 
 ## Requirements
 - macOS 10.9+
@@ -13,9 +13,6 @@ Easy manage login items in MacOSX
 ## Usage
 ### CocoaPods
 ```
-platform :osx, '10.9'
-use_frameworks!
-
 pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
 ```
 
