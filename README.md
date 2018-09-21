@@ -22,17 +22,37 @@ github "Clipy/LoginServiceKit"
 ```
 
 ## Example
-Add login item.
-
+#### Check exist login item
 ```swift
-let appPath = NSBundle.main.bundlePath
-LoginServiceKit.addLoginItems(at: appPath)
+let isExistLoginItem = LoginServiceKit.isExistLoginItems() // default Bundle.main.bundlePath
 ```
 
-Remove login item.
+or
+
 ```swift
-let appPath = NSBundle.mainBundle().bundlePath
-LoginServiceKit.removeLoginItems(at: appPath)
+let isExistLoginItem = LoginServiceKit.isExistLoginItems(at: Bundle.main.bundlePath)
+```
+
+#### Add login item 
+```swift
+LoginServiceKit.addLoginItems() // default Bundle.main.bundlePath
+```
+
+or
+
+```swift
+LoginServiceKit.addLoginItems(at: Bundle.main.bundlePath)
+```
+
+#### Remove login item
+```swift
+LoginServiceKit.removeLoginItems() // default Bundle.main.bundlePath
+```
+
+or 
+
+```swift
+LoginServiceKit.removeLoginItems(at: Bundle.main.bundlePath)
 ```
 
 ### Contributing
