@@ -49,12 +49,12 @@ import Cocoa
 public final class LoginServiceKit: NSObject {}
 
 public extension LoginServiceKit {
-    public static func isExistLoginItems(at path: String) -> Bool {
+    public static func isExistLoginItems(at path: String = Bundle.main.bundlePath) -> Bool {
         return (loginItem(at: path) != nil)
     }
 
     @discardableResult
-    public static func addLoginItems(at path: String) -> Bool {
+    public static func addLoginItems(at path: String = Bundle.main.bundlePath) -> Bool {
         guard !isExistLoginItems(at: path) else { return false }
 
         let loginItemList = LSSharedFileListCreate(nil, kLSSharedFileListSessionLoginItems.takeRetainedValue(), nil).takeRetainedValue()
@@ -64,7 +64,7 @@ public extension LoginServiceKit {
     }
 
     @discardableResult
-    public static func removeLoginItems(at path: String) -> Bool {
+    public static func removeLoginItems(at path: String = Bundle.main.bundlePath) -> Bool {
         guard isExistLoginItems(at: path) else { return false }
 
         let loginItemList = LSSharedFileListCreate(nil, kLSSharedFileListSessionLoginItems.takeRetainedValue(), nil).takeRetainedValue()
