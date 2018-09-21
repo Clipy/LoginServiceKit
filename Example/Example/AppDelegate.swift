@@ -15,12 +15,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let appPath = Bundle.main.bundlePath
-        LoginServiceKit.addLoginItems(at: appPath)
-        //LoginServiceKit.removeLoginItems(at: appPath)
+        LoginServiceKit.addLoginItems()
+        // LoginServiceKit.addLoginItems(at: Bundle.main.bundlePath)
+        // LoginServiceKit.removeLoginItems()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {}
 
 }
-
