@@ -1,9 +1,11 @@
 //
 //  LoginServiceKit.h
-//  LoginServiceKit
 //
-//  Created by 古林俊佑 on 2016/04/05.
-//  Copyright © 2016年 Shunsuke Furubayashi. All rights reserved.
+//  LoginServiceKit
+//  GitHub: https://github.com/clipy
+//  HP: https://clipy-app.com
+//
+//  Copyright © 2015-2019 Clipy Project.
 //
 
 #import <Cocoa/Cocoa.h>
