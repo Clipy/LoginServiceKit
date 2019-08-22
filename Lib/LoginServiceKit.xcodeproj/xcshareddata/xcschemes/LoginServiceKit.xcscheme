@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "FA3C3E53230F12F500C0A6CA"
+               BuildableName = "LoginServiceKitTests.xctest"
+               BlueprintName = "LoginServiceKitTests"
+               ReferencedContainer = "container:LoginServiceKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "FA2FEEDA1CB3F76D00F3A456"
+            BuildableName = "LoginServiceKit.framework"
+            BlueprintName = "LoginServiceKit"
+            ReferencedContainer = "container:LoginServiceKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
