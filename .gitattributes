@@ -1,0 +1,4 @@
+fastlane/* linguist-vendored
+Gemfile linguist-vendored
+Gemfile.lock linguist-vendored
+LoginServiceKit.podspec linguist-vendored
