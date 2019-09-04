@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.source        = { :git => "https://github.com/Clipy/LoginServiceKit.git", :tag => "v#{s.version}" }
   s.platform      = :osx, '10.10'
   s.swift_version = '5.0'
-  s.source_files  = 'Lib/**/*.swift'
+  s.source_files  = 'Lib/LoginServiceKit/*.swift'
 end
