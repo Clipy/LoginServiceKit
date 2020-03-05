@@ -681,9 +681,9 @@
                 <rect key="frame" x="0.0" y="0.0" width="300" height="122"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="16" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-ZZ-GM8">
+                    <stackView orientation="vertical" alignment="leading" spacing="16" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="zoQ-ZZ-GM8">
                         <rect key="frame" x="16" y="16" width="268" height="90"/>
-                        <subviews>
+                        <beginningViews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bbh-MI-hni">
                                 <rect key="frame" x="-2" y="74" width="80" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="LoginStatus:" id="xF4-vq-uCa">
@@ -712,7 +712,7 @@
                                     <action selector="removeLoginItem:" target="Voe-Tx-rLC" id="dbK-DF-AeI"/>
                                 </connections>
                             </button>
-                        </subviews>
+                        </beginningViews>
                         <visibilityPriorities>
                             <integer value="1000"/>
                             <integer value="1000"/>
