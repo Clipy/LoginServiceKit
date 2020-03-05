@@ -5,23 +5,39 @@
 //  GitHub: https://github.com/clipy
 //  HP: https://clipy-app.com
 //
-//  Copyright © 2015-2019 Clipy Project.
+//  Copyright © 2015-2020 Clipy Project.
 //
 
 import Cocoa
 import LoginServiceKit
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
+final class AppDelegate: NSObject, NSApplicationDelegate {
 
-    @IBOutlet weak var window: NSWindow!
+    // MARK: - Properties
+    @IBOutlet private weak var window: NSWindow!
+    @IBOutlet private weak var loginStatusTextField: NSTextField!
 
+    // NARK: - NSApplication Delegte
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        LoginServiceKit.addLoginItems()
-        // LoginServiceKit.addLoginItems(at: Bundle.main.bundlePath)
-        // LoginServiceKit.removeLoginItems()
+        checkLoginStatus()
     }
 
-    func applicationWillTerminate(_ aNotification: Notification) {}
+    private func checkLoginStatus() {
+        loginStatusTextField.stringValue = (LoginServiceKit.isExistLoginItems()) ? "Login Status: On" : "Login Status: Off"
+    }
+    
+}
 
+// MARK: - IBActions
+private extension AppDelegate {
+    @IBAction func addLoginItem(_ sender: Any) {
+        LoginServiceKit.addLoginItems()
+        checkLoginStatus()
+    }
+
+    @IBAction func removeLoginItem(_ sender: Any) {
+        LoginServiceKit.removeLoginItems()
+        checkLoginStatus()
+    }
 }
