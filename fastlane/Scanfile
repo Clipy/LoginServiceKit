@@ -1,4 +1,0 @@
-workspace("LoginServiceKit.xcworkspace")
-scheme("LoginServiceKit")
-clean(true)
-skip_build(true)
