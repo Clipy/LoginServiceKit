@@ -14,10 +14,12 @@ import XCTest
 final class LoginServiceKitTests: XCTestCase {
 
     override func setUp() {
+        super.setUp()
         LoginServiceKit.removeLoginItems()
     }
 
     override func tearDown() {
+        super.tearDown()
         LoginServiceKit.removeLoginItems()
     }
 
