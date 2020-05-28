@@ -10,7 +10,7 @@ Easy manage login items in macOS.
 ## Usage
 ### CocoaPods
 ```
-pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit.git'
+pod 'LoginServiceKit', :git => 'https://github.com/Clipy/LoginServiceKit'
 ```
 
 ### Carthage
@@ -57,10 +57,3 @@ LoginServiceKit uses an API that has been deprecated since macOS 10.11 El Capita
 Therefore, this library will be discontinued when the API used is discontinued.
 
 See this [issue](https://github.com/Clipy/LoginServiceKit/issues/10) for more details.
-
-### Contributing
-1. Fork it ( https://github.com/Clipy/LoginServiceKit/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
