@@ -1,5 +1,5 @@
 # LoginServiceKit
-![CI](https://github.com/Clipy/LoginServiceKit/workflows/CI/badge.svg)
+![CI](https://github.com/Clipy/LoginServiceKit/workflows/Xcode-Build/badge.svg)
 [![Release version](https://img.shields.io/github/release/Clipy/LoginServiceKit.svg)]()
 [![License: Apache-2.0](https://img.shields.io/github/license/Clipy/LoginServiceKit.svg)](https://github.com/Clipy/LoginServiceKit/blob/master/LICENSE)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
