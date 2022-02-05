@@ -25,9 +25,11 @@ final class LoginServiceKitTests: XCTestCase {
 
     func testLoginItems() {
         XCTAssertFalse(LoginServiceKit.isExistLoginItems())
-        LoginServiceKit.addLoginItems()
+        XCTAssertTrue(LoginServiceKit.addLoginItems())
+        XCTAssertFalse(LoginServiceKit.addLoginItems())
         XCTAssertTrue(LoginServiceKit.isExistLoginItems())
-        LoginServiceKit.removeLoginItems()
+        XCTAssertTrue(LoginServiceKit.removeLoginItems())
+        XCTAssertFalse(LoginServiceKit.removeLoginItems())
         XCTAssertFalse(LoginServiceKit.isExistLoginItems())
     }
 
