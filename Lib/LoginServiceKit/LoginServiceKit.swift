@@ -68,8 +68,7 @@ public final class LoginServiceKit: NSObject {
         guard let (list, items) = snapshot else {
             return false
         }
-        
-        let item = unsafeBitCast(items.last ?? nil, to: LSSharedFileListItem.self)
+        let item = unsafeBitCast(items.last, to: LSSharedFileListItem.self)
         return LSSharedFileListInsertItemURL(list, item, nil, nil, URL(fileURLWithPath: path) as CFURL, nil, nil) != nil
     }
 
