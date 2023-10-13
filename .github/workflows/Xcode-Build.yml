@@ -5,15 +5,15 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-10.15, macos-11]
-        xcode: [12.4, 13.2.1]
+        os: [macos-12, macos-13]
+        xcode: ['14.2', '15.0']
         exclude:
-          - os: macos-10.15
-            xcode: 13.2.1
+          - os: macos-12
+            xcode: '15.0'
     env:
       DEVELOPER_DIR: "/Applications/Xcode_${{ matrix.xcode }}.app/Contents/Developer"
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Build and Test
       run: |
         set -o pipefail
@@ -21,11 +21,9 @@ jobs:
           -workspace "$PROJECT" \
           -scheme "$SCHEME" \
           -sdk "$SDK" \
-          -destination "$DESTINATION" \
           -configuration Debug \
           ENABLE_TESTABILITY=YES | xcpretty -c;
       env:
         PROJECT: LoginServiceKit.xcworkspace
         SCHEME: LoginServiceKit
         SDK: macosx
-        DESTINATION: arch=x86_64
