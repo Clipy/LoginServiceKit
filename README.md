@@ -7,6 +7,15 @@
 
 Easy manage login items for macOS. **Not support Sandbox application.**
 
+## About Deprecated APIs
+LoginServiceKit uses an API that has been deprecated since macOS 10.11 El Capitan. However, there is no API migration destination that meets the current specifications.
+Therefore, this library will be discontinued when the API used is discontinued.
+
+See this [issue](https://github.com/Clipy/LoginServiceKit/issues/10) for more details.
+
+> [!NOTE]
+> On macOS 13 and later, prefer using [SMAppService](https://developer.apple.com/documentation/servicemanagement/smappservice) or [LaunchAtLogin-Modern](https://github.com/sindresorhus/LaunchAtLogin-Modern) instead of this library.
+
 ## Usage
 ### CocoaPods
 ```
@@ -51,9 +60,3 @@ or
 ```swift
 LoginServiceKit.removeLoginItems(at: Bundle.main.bundlePath)
 ```
-
-## About Deprecated APIs
-LoginServiceKit uses an API that has been deprecated since macOS 10.11 El Capitan. However, there is no API migration destination that meets the current specifications.
-Therefore, this library will be discontinued when the API used is discontinued.
-
-See this [issue](https://github.com/Clipy/LoginServiceKit/issues/10) for more details.
